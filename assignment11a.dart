@@ -22,5 +22,23 @@ class Animal{
     }
   }
   int get age=>_age;
+  
+  void details(){
+    print('My name is $name , I'm age $age years old');
+  }
+  void birthday (){
+    print('Happy birthday $name ,you are now $age years old');
+  }
+  void make sound(){
+    print('Sound');
+  }
+
+class Cat extends Animal{
+  String family='';
+
+  @override
+  void makesound (){
+    print('The animal meows ');
+  }
 
 }
